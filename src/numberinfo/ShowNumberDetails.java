@@ -2,10 +2,13 @@ package numberinfo;
 
 class ShowNumberDetails {
 
-    void showNumberInfo(Number number) {
-        System.out.println("Liczba " + number.getNumber() + " jest: \n" +
-                number.isEvenOrOdd() + "\n" +
-                number.isPositiveOrNegative() + "\n" +
-                number.numberCheck());
+    private Number number = new Number();
+
+    void showNumberInfo(double value) {
+
+        System.out.println("Liczba " + value+ " jest: \n" +
+                number.isEvenOrOdd(value) + "\n" +
+                number.isPositiveOrNegative(value) + "\n" +
+                number.numberCheck(value));
     }
 }

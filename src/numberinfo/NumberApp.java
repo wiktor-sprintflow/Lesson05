@@ -3,13 +3,10 @@ package numberinfo;
 public class NumberApp {
     public static void main(String[] args) {
 
-        Number number1 = new Number(21);
-        Number number2 = new Number(-14);
+        ShowNumberDetails showNumberDetails = new ShowNumberDetails();
 
-        ShowNumberDetails numberDetails = new ShowNumberDetails();
-
-        numberDetails.showNumberInfo(number1);
+        showNumberDetails.showNumberInfo(21);
         System.out.println();
-        numberDetails.showNumberInfo(number2);
+        showNumberDetails.showNumberInfo(-14);
     }
 }

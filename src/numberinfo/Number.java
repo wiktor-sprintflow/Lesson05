@@ -1,17 +1,8 @@
 package numberinfo;
 
 class Number {
-    private double number;
 
-    Number(double number) {
-        this.number = number;
-    }
-
-    double getNumber() {
-        return number;
-    }
-
-    String isPositiveOrNegative() {
+    String isPositiveOrNegative(double number) {
         if (number > 0) {
             return ("Dodatnia");
         } else if (number < 0) {
@@ -19,7 +10,7 @@ class Number {
         } else return ("Jest zerem");
     }
 
-    String isEvenOrOdd() {
+    String isEvenOrOdd(double number) {
         if (number % 2 == 0) {
             return "Parzysta";
         } else {
@@ -27,7 +18,7 @@ class Number {
         }
     }
 
-    String numberCheck() {
+    String numberCheck(double number) {
         if (number * 6 % 9 == 0) {
             return (number * 6 + " jest podzielna przez 6");
         } else {
